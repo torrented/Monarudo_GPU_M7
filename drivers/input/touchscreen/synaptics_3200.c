@@ -276,10 +276,10 @@ static void sweep2wake_presspwr(struct work_struct * sweep2wake_presspwr_work) {
 		msleep(60);
         	mutex_unlock(&pwrkeyworklock);
 
-		if (wakesleep_vib) {
-		        vibrate(vib_strength);
-			wakesleep_vib = 0;
-		}
+		//if (wakesleep_vib) {
+		//        vibrate(vib_strength);
+		//	wakesleep_vib = 0;
+		//}
 		return;
 	}
 }
@@ -361,7 +361,7 @@ static void logo2wake_longtap_count(struct work_struct * logo2wake_longtap_count
 			pocket_mode = pocket_detection_check();
 
 		if (!pocket_mode || pocket_detect == 0) {
-			vibrate(vib_strength);
+			//vibrate(vib_strength);
 			input_event(sweep2wake_pwrdev, EV_KEY, KEY_POWER, 1);
 			input_sync(sweep2wake_pwrdev);
 			msleep(100);

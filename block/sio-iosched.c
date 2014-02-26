@@ -398,7 +398,3 @@ MODULE_AUTHOR("Miguel Boton");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Simple IO scheduler");
 MODULE_VERSION("0.2");
-<<<<<<< HEAD
-=======
-
->>>>>>> 2dad06c... FIOPS and SIO i/o schedulers
